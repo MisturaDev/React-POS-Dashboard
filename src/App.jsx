@@ -1,13 +1,20 @@
 import React from 'react';
 import TransactionTable from './components/TransactionTable';
+import './App.css'; 
 
 function App() {
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h1>Turah Rae POS Dashboard</h1>
+    <div className="app-container">
+      {/* POS Title */}
+      <header className="pos-header">
+        <h1>Turah Rae Global Ventures</h1>
+        <p className="pos-tagline">Elegance in Every Transaction</p>
+      </header>
 
       {/* Render the Transaction Table component */}
-      <TransactionTable />
+      <main className="transaction-table-container">
+        <TransactionTable />
+      </main>
     </div>
   );
 }
